@@ -10,6 +10,7 @@ import readJson from 'utils/readFile/readJson';
 import Headline from 'components/home_page/Headline';
 import Features from 'components/home_page/Features';
 import LessonMaterials from 'components/home_page/LessonMaterials';
+import Instructor from 'components/home_page/Instructor';
 
 interface Props {
 	features: Feature[];
@@ -34,6 +35,10 @@ const Home: NextPage<Props> = ({ features, lessonMaterials }) => {
 					<h2 className="text-3xl text-center text-ice-blue-900 font-semibold mb-[27px]">What will you learn?</h2>
 
 					<LessonMaterials lessonMaterials={lessonMaterials} />
+				</section>
+
+				<section className="flex justify-center item-center flex-col mb-24">
+					<Instructor />
 				</section>
 			</main>
 		</>
