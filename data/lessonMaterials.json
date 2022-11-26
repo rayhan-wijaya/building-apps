@@ -1,0 +1,42 @@
+[
+	{
+		"title": "NextJS",
+		"image": "nextjs.png",
+		"imageAlt": "An icon of NextJS"
+	},
+	{
+		"title": "ReactJS",
+		"image": "reactjs.png",
+		"imageAlt": "An icon of ReactJS"
+	},
+	{
+		"title": "Expo",
+		"image": "expo.svg",
+		"imageAlt": "An icon of Expo"
+	},
+	{
+		"title": "PostgreSQL",
+		"image": "postgres.png",
+		"imageAlt": "An icon of PostgreSQL"
+	},
+	{
+		"title": "Javascript",
+		"image": "javascript.png",
+		"imageAlt": "An icon of Javascript"
+	},
+	{
+		"title": "Typescript",
+		"image": "typescript.svg",
+		"imageAlt": "An icon of Typescript"
+	},
+	{
+		"title": "HTML",
+		"image": "html.png",
+		"imageAlt": "An icon of HTML"
+	},
+	{
+		"title": "CSS",
+		"image": "css.png",
+		"imageAlt": "An icon of CSS"
+	}
+]
