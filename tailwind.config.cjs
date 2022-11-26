@@ -15,6 +15,9 @@ module.exports = {
 					900: '#1D4676',
 				},
 			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],
