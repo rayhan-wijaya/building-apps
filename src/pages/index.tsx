@@ -11,6 +11,7 @@ import Headline from 'components/home_page/Headline';
 import Features from 'components/home_page/Features';
 import LessonMaterials from 'components/home_page/LessonMaterials';
 import Instructor from 'components/home_page/Instructor';
+import Footer from 'components/Footer';
 
 interface Props {
 	features: Feature[];
@@ -40,6 +41,8 @@ const Home: NextPage<Props> = ({ features, lessonMaterials }) => {
 				<section className="flex justify-center item-center flex-col mb-24">
 					<Instructor />
 				</section>
+
+				<Footer includeRegisterCard={true} />
 			</main>
 		</>
 	);
