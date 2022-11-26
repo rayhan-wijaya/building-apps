@@ -39,7 +39,7 @@ const Footer = ({ includeRegisterCard }: Props) => {
 const FooterInfo = () => {
 	return (
 		<div className="flex flex-col gap-9 items-center">
-			<h2 className="text-white text-xl">Building Apps Program</h2>
+			<h2 className="text-gray-300 text-xl">Building Apps Program</h2>
 
 			<div className="flex gap-9">
 				<div className="flex flex-col text-gray-400 text-xl">
