@@ -30,7 +30,7 @@ const Home: NextPage<Props> = ({ features, lessonMaterials }) => {
 					<Features features={features} />
 				</section>
 
-				<section className="flex justify-center item-center flex-col">
+				<section className="flex justify-center item-center flex-col mb-24">
 					<h2 className="text-3xl text-center text-ice-blue-900 font-semibold mb-[27px]">What will you learn?</h2>
 
 					<LessonMaterials lessonMaterials={lessonMaterials} />
