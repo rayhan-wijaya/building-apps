@@ -1,0 +1,21 @@
+[
+	{
+		"title": "Be Employable",
+		"description": "You will learn in-demand technologies companies are looking for.",
+		"important": true,
+		"image": "employee.png",
+		"imageAlt": "An image of an employee."
+	},
+	{
+		"title": "Online Meetings",
+		"description": "With online meetings, lessons are available to everyone.",
+		"image": "onlineMeeting.png",
+		"imageAlt": "An image of an online meeting."
+	},
+	{
+		"title": "It's Free!",
+		"description": "No need to pay any amount of cash for this program.",
+		"image": "free.png",
+		"imageAlt": "An image of a free tag."
+	}
+]
