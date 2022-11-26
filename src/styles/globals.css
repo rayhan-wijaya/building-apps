@@ -3,3 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.button-primary {
+		@apply
+			font-semibold
+			pt-2 pb-2 pl-6 pr-6
+			bg-white
+			rounded-full
+			text-lg;
+	}
+
+	.button-secondary {
+		@apply
+			font-semibold
+			pt-2 pb-2 pl-6 pr-6
+			bg-transparent
+			border-2 border-white
+			rounded-full
+			text-white
+			text-lg;
+	}
+}
