@@ -18,7 +18,25 @@ interface Props {
 
 const Home: NextPage<Props> = ({ features, lessonMaterials }) => {
 	return (
-		<></>
+		<>
+			<Head>
+				<title>Building Apps</title>
+			</Head>
+
+			<main>
+				<Headline />
+				
+				<section className="flex justify-center relative bottom-32">
+					<Features features={features} />
+				</section>
+
+				<section className="flex justify-center item-center flex-col">
+					<h2 className="text-3xl text-center text-ice-blue-900 font-semibold mb-[27px]">What will you learn?</h2>
+
+					<LessonMaterials lessonMaterials={lessonMaterials} />
+				</section>
+			</main>
+		</>
 	);
 };
 
