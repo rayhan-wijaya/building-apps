@@ -19,7 +19,7 @@ const Headline = () => {
 					</p>
 
 					<div className="flex gap-4">
-						<Link className="button-primary" href="/">
+						<Link className="button-primary" href="/register">
 							Register {' '}
 							<span className="font-inter">&rarr;</span>
 						</Link>
