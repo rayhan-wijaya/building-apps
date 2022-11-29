@@ -39,3 +39,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Vim temp files
+*.sw*
+*~
