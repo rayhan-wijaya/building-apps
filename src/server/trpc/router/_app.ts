@@ -1,8 +1,9 @@
 import { router } from "../trpc";
-import { exampleRouter } from "./example";
+
+import { registerFormRouter } from './registerForm.router';
 
 export const appRouter = router({
-  example: exampleRouter,
+	registerForm: registerFormRouter,
 });
 
 // export type definition of API
