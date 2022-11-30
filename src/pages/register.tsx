@@ -16,7 +16,9 @@ const Register = () => {
 			<main>
 				<Headline />
 
-				<RegisterForm />
+				<section className="mb-24">
+					<RegisterForm />
+				</section>
 
 				<Footer />
 			</main>
