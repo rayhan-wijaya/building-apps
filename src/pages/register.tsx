@@ -2,7 +2,9 @@ import React from 'react';
 
 import Head from 'next/head';
 
+import Headline from 'components/register_page/Headline';
 import RegisterForm from 'components/register_page/RegisterForm';
+import Footer from 'components/Footer';
 
 const Register = () => {
 	return (
@@ -12,7 +14,11 @@ const Register = () => {
 			</Head>
 
 			<main>
+				<Headline />
+
 				<RegisterForm />
+
+				<Footer />
 			</main>
 		</>
 	);
