@@ -9,7 +9,7 @@ interface TextQuestionProps extends React.InputHTMLAttributes<HTMLInputElement> 
 const TextQuestion = ({ name, question, type = 'text', ...rest }: TextQuestionProps) => {
 	return (
 		<>
-			<label className="bg-white p-5 w-[50%] transition-all focus-within:shadow-md border-gray-100 border-2 focus-within:border-cool-blue-800 mb-2 rounded-lg">
+			<label className="bg-white p-5 md:w-[700px] w-[80%] transition-all focus-within:shadow-md border-gray-100 border-2 focus-within:border-cool-blue-800 mb-2 rounded-lg">
 				<div className="block mb-2">{question} {' '}</div>
 
 				<input
