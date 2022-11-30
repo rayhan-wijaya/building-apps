@@ -7,10 +7,10 @@ import RegisterCard from 'components/RegisterCard';
 import Copyright from 'components/Copyright';
 
 interface Props {
-	includeRegisterCard: boolean;
+	includeRegisterCard?: boolean;
 }
 
-const Footer = ({ includeRegisterCard }: Props) => {
+const Footer = ({ includeRegisterCard = false }: Props) => {
 	return (
 		<footer className="bg-cool-blue-900">
 			<div className="h-32 w-full relative bottom-2">
