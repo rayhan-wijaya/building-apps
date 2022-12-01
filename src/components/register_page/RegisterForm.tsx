@@ -8,7 +8,11 @@ import TextQuestion from 'components/question/TextQuestion';
 import RadioQuestion from 'components/question/RadioQuestion';
 import DateQuestion from 'components/question/DateQuestion';
 
-const RegisterForm = () => {
+interface Props {
+	setHasRegistered?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const RegisterForm = ({ setHasRegistered }: Props) => {
 	const [currentAnswers, setCurrentAnswers] = useState<Partial<RegisterResponse>>({});
 	const [selectedBirthDate, setSelectedBirthDate] = useState<Date>();
 
@@ -46,6 +50,10 @@ const RegisterForm = () => {
 		}
 
 		setCanSubmit(false);
+		
+		if (setHasRegistered) {
+			setHasRegistered(true);
+		}
 
 		registerMutation.mutate({
 			answers: (currentAnswers as RegisterResponse)
