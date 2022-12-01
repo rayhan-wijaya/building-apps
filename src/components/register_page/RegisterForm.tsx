@@ -5,6 +5,7 @@ import { trpc } from 'utils/trpc';
 import { RegisterResponse } from 'schemas/registerResponse';
 
 import TextQuestion from 'components/question/TextQuestion';
+import RadioQuestion from 'components/question/RadioQuestion';
 
 const RegisterForm = () => {
 	const [currentAnswers, setCurrentAnswers] = useState<Partial<RegisterResponse>>({});
@@ -53,6 +54,23 @@ const RegisterForm = () => {
 					spellCheck={false}
 					required={true}
 					onChange={handleInputChange}
+				/>
+				
+				<RadioQuestion
+					name="gender"
+					question="Gender"
+					options={[
+						{
+							text: 'Male',
+							value: 'male',
+						},
+						{
+							text: 'Female',
+							value: 'female',
+						},
+					]}
+					onChange={handleInputChange}
+					required={true}
 				/>
 
 				<TextQuestion
