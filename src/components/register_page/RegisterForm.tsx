@@ -31,34 +31,26 @@ interface Answers {
 }
 
 const RegisterForm = () => {
-	const [answers, setAnswers] = useState<Answers>({
-		fullName: '',
-		nickname: '',
-		email: '',
-		phoneNumber: '',
-	});
-
+	const [currentAnswers, setCurrentAnswers] = useState<Partial<Answers>>({});
 	const registerMutation = trpc.registerForm.respond.useMutation();
 
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = event.target;
-		
-		setAnswers(prevAnswers => {
-			if (prevAnswers === undefined) {
-				return prevAnswers;
-			}
 
-			return {
-				...prevAnswers,
+		setCurrentAnswers(prev => (
+			{
+				...prev,
 				[name]: value,
-			};
-		});
+			}
+		));
 	}
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
-		registerMutation.mutate({ answers });
+		registerMutation.mutate({
+			answers: (currentAnswers as Answers)
+		});
 	}
 
 	return (
