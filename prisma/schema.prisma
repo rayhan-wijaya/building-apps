@@ -10,10 +10,20 @@ datasource db {
 	url      = env("DATABASE_URL")
 }
 
+enum Gender {
+	male
+	female
+}
+
 model RegisterResponse {
 	id          String @id @db.Uuid @default(uuid())
 	fullName    String
 	nickname    String
-	email       String @db.VarChar(320)
+	gender      Gender?
+	birthDate   DateTime?
+	education   String?
+	job         String?
 	phoneNumber String
+	email       String @db.VarChar(320)
+	address     String?
 }
