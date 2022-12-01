@@ -2,41 +2,49 @@
 	{
 		"title": "NextJS",
 		"image": "nextjs.png",
-		"imageAlt": "An icon of NextJS"
+		"imageAlt": "An icon of NextJS",
+		"href": "https://nextjs.org"
 	},
 	{
 		"title": "ReactJS",
 		"image": "reactjs.png",
-		"imageAlt": "An icon of ReactJS"
+		"imageAlt": "An icon of ReactJS",
+		"href": "https://reactjs.org"
 	},
 	{
 		"title": "Expo",
 		"image": "expo.svg",
-		"imageAlt": "An icon of Expo"
+		"imageAlt": "An icon of Expo",
+		"href": "https://expo.dev/"
 	},
 	{
 		"title": "PostgreSQL",
 		"image": "postgres.png",
-		"imageAlt": "An icon of PostgreSQL"
+		"imageAlt": "An icon of PostgreSQL",
+		"href": "https://www.postgresql.org/"
 	},
 	{
 		"title": "Javascript",
 		"image": "javascript.png",
-		"imageAlt": "An icon of Javascript"
+		"imageAlt": "An icon of Javascript",
+		"href": "https://en.wikipedia.org/wiki/JavaScript"
 	},
 	{
 		"title": "Typescript",
 		"image": "typescript.svg",
-		"imageAlt": "An icon of Typescript"
+		"imageAlt": "An icon of Typescript",
+		"href": "https://www.typescriptlang.org/"
 	},
 	{
 		"title": "HTML",
 		"image": "html.png",
-		"imageAlt": "An icon of HTML"
+		"imageAlt": "An icon of HTML",
+		"href": "https://en.wikipedia.org/wiki/HTML"
 	},
 	{
 		"title": "CSS",
 		"image": "css.png",
-		"imageAlt": "An icon of CSS"
+		"imageAlt": "An icon of CSS",
+		"href": "https://en.wikipedia.org/wiki/CSS"
 	}
 ]
