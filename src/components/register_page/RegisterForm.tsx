@@ -13,7 +13,7 @@ const TextQuestion = ({ name, question, type = 'text', ...rest }: TextQuestionPr
 				<div className="block mb-2">{question} {' '}</div>
 
 				<input
-					className="block w-full py-[1] transition-[border] focus:outline-none font-semibold"
+					className="block w-full transition-[border] focus:outline-none font-semibold"
 					name={name}
 					type={type}
 					{...rest}
