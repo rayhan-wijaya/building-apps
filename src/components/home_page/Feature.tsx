@@ -14,8 +14,8 @@ const Feature = ({ feature, className }: Props) => {
 				<Image
 					src={`/features/${feature.image}` ?? ''}
 					alt={feature.imageAlt ?? 'A feature icon.'}
-					height={110}
-					width={110}
+					height={100}
+					width={100}
 				/>
 			</div>
 
