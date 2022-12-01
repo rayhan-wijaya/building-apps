@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Headline = () => {
+const FormHeadline = () => {
 	return (
 		<header>
 			<div className="flex justify-center pt-44 pb-24">
@@ -10,4 +10,4 @@ const Headline = () => {
 	);
 }
 
-export default Headline;
+export default FormHeadline;
