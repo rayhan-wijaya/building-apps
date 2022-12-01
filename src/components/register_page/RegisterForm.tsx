@@ -22,16 +22,11 @@ const TextQuestion = ({ name, question, type = 'text', ...rest }: TextQuestionPr
 		</>
 	);
 }; 
+import { RegisterResponse } from 'schemas/registerResponse';
 
-interface Answers {
-	fullName: string;
-	nickname: string;
-	email: string;
-	phoneNumber: string;
-}
 
 const RegisterForm = () => {
-	const [currentAnswers, setCurrentAnswers] = useState<Partial<Answers>>({});
+	const [currentAnswers, setCurrentAnswers] = useState<Partial<RegisterResponse>>({});
 	const registerMutation = trpc.registerForm.respond.useMutation();
 
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -49,7 +44,7 @@ const RegisterForm = () => {
 		event.preventDefault();
 
 		registerMutation.mutate({
-			answers: (currentAnswers as Answers)
+			answers: (currentAnswers as RegisterResponse)
 		});
 	}
 
