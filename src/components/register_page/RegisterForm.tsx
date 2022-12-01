@@ -6,9 +6,12 @@ import { RegisterResponse } from 'schemas/registerResponse';
 
 import TextQuestion from 'components/question/TextQuestion';
 import RadioQuestion from 'components/question/RadioQuestion';
+import DateQuestion from 'components/question/DateQuestion';
 
 const RegisterForm = () => {
 	const [currentAnswers, setCurrentAnswers] = useState<Partial<RegisterResponse>>({});
+	const [selectedBirthDate, setSelectedBirthDate] = useState<Date>();
+
 	const registerMutation = trpc.registerForm.respond.useMutation();
 
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -18,6 +21,17 @@ const RegisterForm = () => {
 			{
 				...prev,
 				[name]: value,
+			}
+		));
+	}
+
+	const handleBirthDateInputChange = (date: Date) => {
+		setSelectedBirthDate(date);
+
+		setCurrentAnswers(prev => (
+			{
+				...prev,
+				birthDate: date,
 			}
 		));
 	}
@@ -70,6 +84,18 @@ const RegisterForm = () => {
 						},
 					]}
 					onChange={handleInputChange}
+					required={true}
+				/>
+
+				<DateQuestion
+					name="birthDate"
+					question="Birth Date"
+					onChange={handleBirthDateInputChange}
+					selected={selectedBirthDate}
+					showMonthDropdown={true}
+					showYearDropdown={true}
+					dropdownMode="select"
+					placeholderText="Your birth date"
 					required={true}
 				/>
 
