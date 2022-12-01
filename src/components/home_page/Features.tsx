@@ -10,12 +10,12 @@ interface Props {
 
 const Features = ({ features }: Props) => {
 	return (
-		<div className="grid grid-cols-2 gap-4 max-w-2xl">
+		<div className="grid grid-cols md:grid-cols-2 gap-4 md:max-w-3xl w-[80%]">
 			{features.map(feature => {
 				return (
 					<Feature
 						feature={feature}
-						className={feature.important ? 'col-span-2' : ''}
+						className={feature.important ? 'md:col-span-2' : ''}
 						key={feature.title}
 					/>
 				);
