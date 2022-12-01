@@ -14,6 +14,8 @@ const RegisterForm = () => {
 
 	const registerMutation = trpc.registerForm.respond.useMutation();
 
+	const [canSubmit, setCanSubmit] = useState<boolean>(true);
+
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = event.target;
 
@@ -38,6 +40,12 @@ const RegisterForm = () => {
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
+
+		if (!canSubmit) {
+			return;
+		}
+
+		setCanSubmit(false);
 
 		registerMutation.mutate({
 			answers: (currentAnswers as RegisterResponse)
