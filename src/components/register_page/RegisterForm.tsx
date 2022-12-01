@@ -2,28 +2,9 @@ import React, { useState } from 'react';
 
 import { trpc } from 'utils/trpc'; 
 
-interface TextQuestionProps extends React.InputHTMLAttributes<HTMLInputElement> {
-	question: string;
-}
-
-const TextQuestion = ({ name, question, type = 'text', ...rest }: TextQuestionProps) => {
-	return (
-		<>
-			<label className="bg-white p-5 md:w-[700px] w-[80%] transition-all focus-within:shadow-md border-gray-100 border-2 focus-within:border-cool-blue-800 mb-2 rounded-lg">
-				<div className="block mb-2">{question} {' '}</div>
-
-				<input
-					className="block w-full transition-[border] focus:outline-none font-semibold"
-					name={name}
-					type={type}
-					{...rest}
-				/>
-			</label>
-		</>
-	);
-}; 
 import { RegisterResponse } from 'schemas/registerResponse';
 
+import TextQuestion from 'components/question/TextQuestion';
 
 const RegisterForm = () => {
 	const [currentAnswers, setCurrentAnswers] = useState<Partial<RegisterResponse>>({});
@@ -75,10 +56,19 @@ const RegisterForm = () => {
 				/>
 
 				<TextQuestion
-					name="email"
-					type="email"
-					question="Email"
-					placeholder={'Your email'}
+					name="education"
+					type="text"
+					question="Education"
+					placeholder={'Your education (e.g. school, college)'}
+					required={true}
+					onChange={handleInputChange}
+				/>
+
+				<TextQuestion
+					name="job"
+					type="text"
+					question="Job"
+					placeholder={'Your job'}
 					required={true}
 					onChange={handleInputChange}
 				/>
@@ -88,6 +78,25 @@ const RegisterForm = () => {
 					type="tel"
 					question="Phone Number"
 					placeholder={'Your phone number'}
+					required={true}
+					onChange={handleInputChange}
+				/>
+
+				<TextQuestion
+					name="email"
+					type="email"
+					question="Email"
+					placeholder={'Your email'}
+					required={true}
+					onChange={handleInputChange}
+					maxLength={320}
+				/>
+
+				<TextQuestion
+					name="address"
+					type="text"
+					question="Address"
+					placeholder={'Your home address'}
 					required={true}
 					onChange={handleInputChange}
 				/>
