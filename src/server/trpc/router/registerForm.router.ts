@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import registerResponse from 'schemas/registerResponse';
 
 import { router, publicProcedure } from 'server/trpc/trpc';
 
@@ -8,12 +9,7 @@ export const registerFormRouter = router({
 	respond: publicProcedure
 		.input(
 			z.object({
-				answers: z.object({
-					fullName: z.string(),
-					nickname: z.string(),
-					email: z.string(),
-					phoneNumber: z.string(),
-				}),
+				answers: registerResponse,
 			})
 		)
 		.mutation(async ({ input }) => {
