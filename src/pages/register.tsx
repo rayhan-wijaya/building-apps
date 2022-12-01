@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Head from 'next/head';
 
-import Headline from 'components/register_page/Headline';
 import RegisterForm from 'components/register_page/RegisterForm';
+import FormHeadline from 'components/register_page/FormHeadline';
+import Success from 'components/register_page/Success';
+
 import Footer from 'components/Footer';
 
 const Register = () => {
+	const [hasRegistered, setHasRegistered] = useState(false);
+
 	return (
 		<>
 			<Head>
@@ -14,11 +18,15 @@ const Register = () => {
 			</Head>
 
 			<main>
-				<Headline />
 
-				<section className="mb-24">
-					<RegisterForm />
-				</section>
+				{
+					hasRegistered
+					? <Success />
+					: <div className="mb-28">
+						<FormHeadline />
+						<RegisterForm setHasRegistered={setHasRegistered} />
+					</div>
+				}
 
 				<Footer />
 			</main>
