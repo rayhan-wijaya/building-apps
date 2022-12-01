@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "RegisterResponse" ALTER COLUMN "birthDate" DROP NOT NULL,
+ALTER COLUMN "address" DROP NOT NULL,
+ALTER COLUMN "education" DROP NOT NULL,
+ALTER COLUMN "gender" DROP NOT NULL;
