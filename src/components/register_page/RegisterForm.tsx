@@ -29,7 +29,7 @@ const RegisterForm = () => {
 	const [currentAnswers, setCurrentAnswers] = useState<Partial<RegisterResponse>>({});
 	const registerMutation = trpc.registerForm.respond.useMutation();
 
-	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = event.target;
 
 		setCurrentAnswers(prev => (
@@ -61,7 +61,7 @@ const RegisterForm = () => {
 					placeholder={'Your full name'}
 					spellCheck={false}
 					required={true}
-					onChange={handleChange}
+					onChange={handleInputChange}
 				/>
 
 				<TextQuestion
@@ -71,7 +71,7 @@ const RegisterForm = () => {
 					placeholder={'Your nickname'}
 					spellCheck={false}
 					required={true}
-					onChange={handleChange}
+					onChange={handleInputChange}
 				/>
 
 				<TextQuestion
@@ -80,7 +80,7 @@ const RegisterForm = () => {
 					question="Email"
 					placeholder={'Your email'}
 					required={true}
-					onChange={handleChange}
+					onChange={handleInputChange}
 				/>
 
 				<TextQuestion
@@ -89,7 +89,7 @@ const RegisterForm = () => {
 					question="Phone Number"
 					placeholder={'Your phone number'}
 					required={true}
-					onChange={handleChange}
+					onChange={handleInputChange}
 				/>
 
 				<input
