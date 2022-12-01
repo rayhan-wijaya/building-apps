@@ -8,7 +8,7 @@ interface Props {
 
 const LessonMaterials = ({ lessonMaterials }: Props) => {
 	return (
-		<div className="grid grid-cols-3 gap-7 max-w-2xl m-auto">
+		<div className="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-7 w-[80%] sm:max-w-2xl m-auto">
 			{lessonMaterials.map(lessonMaterial => {
 				return (
 					<LessonMaterial
