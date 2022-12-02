@@ -43,3 +43,6 @@ yarn-error.log*
 # Vim temp files
 *.sw*
 *~
+
+# Webpack Bundle Analyzer
+/analyze
