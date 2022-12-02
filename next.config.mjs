@@ -5,6 +5,8 @@
  */
 !process.env.SKIP_ENV_VALIDATION && (await import("./src/env/server.mjs"));
 
+import bundleAnalyzer from '@next/bundle-analyzer';
+
 /** @type {import("next").NextConfig} */
 const config = {
 	reactStrictMode: true,
@@ -15,7 +17,7 @@ const config = {
 	},
 };
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
+const withBundleAnalyzer = bundleAnalyzer({
 	enabled: process.env.ANALYZE === 'true',
 });
 
