@@ -3,6 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import CodeWidget from 'components/home_page/CodeWidget';
+
 const Headline = () => {
 	return (
 		<header className="bg-cool-blue-900">
@@ -26,6 +28,10 @@ const Headline = () => {
 
 						<Link className="button-secondary" href="/">More Info</Link>
 					</div>
+				</div>
+
+				<div className="flex gap-5 items-center overflow-hidden relative">
+					<CodeWidget className="absolute w-full animate-[appear-from-below_0.75s_ease_forwards,_1s_disappear-to-top_ease_2.5s_forwards]" />
 				</div>
 			</div>
 
