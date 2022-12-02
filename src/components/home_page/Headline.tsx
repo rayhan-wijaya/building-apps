@@ -32,6 +32,14 @@ const Headline = () => {
 
 				<div className="flex gap-5 items-center overflow-hidden relative">
 					<CodeWidget className="absolute w-full animate-[appear-from-below_0.75s_ease_forwards,_1s_disappear-to-top_ease_2.5s_forwards]" />
+
+					<div className="opacity-0 animate-[appear-from-below_0.97s_ease_2.7s_forwards]">
+						<Image src="/graphics/phone.svg" alt="An image of a product page on a phone." width={200} height={100} />
+					</div>
+					
+					<div className="opacity-0 animate-[appear-from-below_1s_ease_2.75s_forwards]">
+						<Image src="/graphics/laptop.svg" alt="An image of a product page on a laptop." width={500} height={500} />
+					</div>
 				</div>
 			</div>
 
