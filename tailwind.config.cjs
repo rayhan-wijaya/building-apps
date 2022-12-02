@@ -20,6 +20,18 @@ module.exports = {
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
 			},
+			keyframes: {
+				'appear-from-below': {
+					'0%': {
+						transform: 'translateY(100%)',
+						opacity: '0',
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1',
+					},
+				},
+			},
 		},
 	},
 	plugins: [],
