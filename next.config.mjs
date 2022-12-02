@@ -14,4 +14,9 @@ const config = {
 		defaultLocale: "en",
 	},
 };
-export default config;
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+	enabled: process.env.ANALYZE === 'true',
+});
+
+export default withBundleAnalyzer(config);
