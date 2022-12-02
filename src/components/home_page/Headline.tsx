@@ -6,8 +6,8 @@ import Link from 'next/link';
 const Headline = () => {
 	return (
 		<header className="bg-cool-blue-900">
-			<div className="flex py-64 px-32">
-				<div>
+			<div className="flex justify-center py-64 px-24 gap-16">
+				<div className="flex flex-col justify-center">
 					<h1 className="text-white text-3xl font-semibold mb-5">
 						Learn to Build Apps <br />
 						<span className="text-ice-blue-100 font-bold">For Free!</span>
