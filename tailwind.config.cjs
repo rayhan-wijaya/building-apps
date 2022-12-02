@@ -31,6 +31,15 @@ module.exports = {
 						opacity: '1',
 					},
 				},
+				'disappear-to-top': {
+					'0%': {
+						opacity: '1',
+					},
+					'100%': {
+						transform: 'translateY(-100%)',
+						opacity: '0',
+					},
+				},
 			},
 		},
 	},
