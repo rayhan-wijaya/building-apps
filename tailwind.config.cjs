@@ -40,6 +40,15 @@ module.exports = {
 						opacity: '0',
 					},
 				},
+				'slide-size': {
+					'0%': {
+						width: '0',
+					},
+					'100%': {
+						width: '100%',
+					},
+				},
+			},
 			},
 		},
 	},
