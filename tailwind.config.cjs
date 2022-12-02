@@ -49,6 +49,8 @@ module.exports = {
 					},
 				},
 			},
+			animation: {
+				typing: 'slide-size 2.5s linear 0.5s forwards',
 			},
 		},
 	},
