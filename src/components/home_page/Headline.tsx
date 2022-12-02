@@ -16,8 +16,8 @@ const Headline = () => {
 					</h1>
 
 					<p className="text-white mb-5">
-						This program will teach you web and mobile development, <br />
-						which at the end you’ll build an online shop!
+						Teaching you mobile and web development. <br />
+						At the end, you can build your own online shop!
 					</p>
 
 					<div className="flex gap-4">
