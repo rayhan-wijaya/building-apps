@@ -20,9 +20,9 @@ const Feature = ({ feature, className }: Props) => {
 			</div>
 
 			<div>
-				<h3 className="text-center text-ice-blue-900 font-bold text-2xl mb-3">
+				<h2 className="text-center text-ice-blue-900 font-bold text-2xl mb-3">
 					{feature.title}
-				</h3>
+				</h2>
 
 				<p className="text-center leading-5">{feature.description}</p>
 			</div>
