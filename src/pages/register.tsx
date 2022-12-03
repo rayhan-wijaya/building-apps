@@ -28,7 +28,7 @@ const Register = () => {
 					</div>
 				}
 
-				<Footer />
+				<Footer includeRegisterCard={false} />
 			</main>
 		</>
 	);
