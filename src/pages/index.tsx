@@ -7,10 +7,11 @@ import getFeatures from 'utils/features/getFeatures';
 import getUniqueLessons from 'utils/lessons/getUniqueLessons';
 
 import Headline from 'components/home_page/Headline';
+import Footer from 'components/Footer';
+
 import Features from 'components/home_page/Features';
 import Lessons from 'components/home_page/lesson/Lessons';
 import Instructor from 'components/home_page/Instructor';
-import Footer from 'components/Footer';
 
 interface Props {
 	features: Feature[];
