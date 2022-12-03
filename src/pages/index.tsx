@@ -3,10 +3,8 @@ import { NextPage } from "next";
 import { GetStaticProps } from 'next';
 import Head from "next/head";
 
-import path from 'path';
-
-import readJson from 'utils/readFile/readJson';
 import getFeatures from 'utils/features/getFeatures';
+import getUniqueLessons from 'utils/lessons/getUniqueLessons';
 
 import Headline from 'components/home_page/Headline';
 import Features from 'components/home_page/Features';
@@ -50,10 +48,8 @@ const Home: NextPage<Props> = ({ features, lessons }) => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-	const dataDir = path.join(process.cwd(), 'data');
-
-	const lessons = await readJson<LessonMaterial[]>('lessonMaterials.json', dataDir);
 	const features = await getFeatures();
+	const lessons = await getUniqueLessons({ onlyFeatured: true });
 
 	return {
 		props: {
