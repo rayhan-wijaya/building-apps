@@ -6,6 +6,7 @@ import Head from "next/head";
 import path from 'path';
 
 import readJson from 'utils/readFile/readJson';
+import getFeatures from 'utils/features/getFeatures';
 
 import Headline from 'components/home_page/Headline';
 import Features from 'components/home_page/Features';
@@ -51,8 +52,8 @@ const Home: NextPage<Props> = ({ features, lessons }) => {
 export const getStaticProps: GetStaticProps = async (context) => {
 	const dataDir = path.join(process.cwd(), 'data');
 
-	const features = await readJson<Feature[]>('features.json', dataDir);
 	const lessons = await readJson<LessonMaterial[]>('lessonMaterials.json', dataDir);
+	const features = await getFeatures();
 
 	return {
 		props: {
