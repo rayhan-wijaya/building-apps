@@ -1,0 +1,142 @@
+{
+	"chapters": [
+		{
+			"title": "Building Web Apps",
+			"lessons": [
+				{
+					"title": "HTML",
+					"image": "html.png",
+					"href": ""
+				},
+				{
+					"title": "Javascript",
+					"image": "javascript.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "CSS",
+					"image": "css.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "NodeJS",
+					"image": "nodejs.svg",
+					"href": ""
+				},
+				{
+					"title": "ReactJS",
+					"image": "reactjs.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Vercel",
+					"image": "vercel.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "NextJS",
+					"image": "nextjs.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Auth0",
+					"image": "auth0.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "PostgreSQL",
+					"image": "postgres.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Stripe",
+					"image": "stripe.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Google Adsense",
+					"image": "adsense.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Easypost",
+					"image": "easypost.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Google Analytics",
+					"image": "googleAnalytics.svg",
+					"href": "",
+					"featured": true
+				}
+			]
+		},
+		{
+			"title": "Building Mobile Apps",
+			"lessons": [
+				{
+					"title": "React Native",
+					"image": "reactjs.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Expo",
+					"image": "expo.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Auth0",
+					"image": "auth0.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Publishing to the App Store",
+					"image": "appStore.png",
+					"href": ""
+				},
+				{
+					"title": "Publishing to the Play Store",
+					"image": "googlePlay.png",
+					"href": ""
+				},
+				{
+					"title": "Stripe",
+					"image": "stripe.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Easypost",
+					"image": "easypost.svg",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "PostgreSQL",
+					"image": "postgres.png",
+					"href": "",
+					"featured": true
+				},
+				{
+					"title": "Google Admob",
+					"image": "admob.png",
+					"href": "",
+					"featured": true
+				}
+			]
+		}
+	]
+}
