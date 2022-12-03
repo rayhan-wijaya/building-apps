@@ -10,7 +10,7 @@ interface Props {
 	includeRegisterCard?: boolean;
 }
 
-const Footer = ({ includeRegisterCard = false }: Props) => {
+const Footer = ({ includeRegisterCard = true }: Props) => {
 	return (
 		<footer className="bg-cool-blue-900">
 			<div className="h-32 w-full relative bottom-2">
