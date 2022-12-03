@@ -7,7 +7,7 @@ interface LessonChapter {
 	lessons: LessonMaterial[];
 }
 
-interface LessonMaterial {
+interface Lesson {
 	title: string;
 	image: string;
 	href: string;
