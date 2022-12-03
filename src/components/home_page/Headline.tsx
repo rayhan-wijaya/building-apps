@@ -26,7 +26,7 @@ const Headline = () => {
 							<span className="font-inter">&rarr;</span>
 						</Link>
 
-						<Link className="button-secondary" href="/">More Info</Link>
+						<Link className="button-secondary" href="/info">More Info</Link>
 					</div>
 				</div>
 
