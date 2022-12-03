@@ -9,16 +9,16 @@ import readJson from 'utils/readFile/readJson';
 
 import Headline from 'components/home_page/Headline';
 import Features from 'components/home_page/Features';
-import LessonMaterials from 'components/home_page/LessonMaterials';
+import Lessons from 'components/home_page/lesson/Lessons';
 import Instructor from 'components/home_page/Instructor';
 import Footer from 'components/Footer';
 
 interface Props {
 	features: Feature[];
-	lessonMaterials: LessonMaterial[];
+	lessons: Lesson[];
 }
 
-const Home: NextPage<Props> = ({ features, lessonMaterials }) => {
+const Home: NextPage<Props> = ({ features, lessons }) => {
 	return (
 		<>
 			<Head>
@@ -35,7 +35,7 @@ const Home: NextPage<Props> = ({ features, lessonMaterials }) => {
 				<section className="flex justify-center item-center flex-col mb-24">
 					<h2 className="text-3xl text-center text-ice-blue-900 font-semibold mb-[27px]">What will you learn?</h2>
 
-					<LessonMaterials lessonMaterials={lessonMaterials} />
+					<Lessons lessons={lessons} />
 				</section>
 
 				<section className="flex justify-center item-center flex-col mb-24">
@@ -52,12 +52,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
 	const dataDir = path.join(process.cwd(), 'data');
 
 	const features = await readJson<Feature[]>('features.json', dataDir);
-	const lessonMaterials = await readJson<LessonMaterial[]>('lessonMaterials.json', dataDir);
+	const lessons = await readJson<LessonMaterial[]>('lessonMaterials.json', dataDir);
 
 	return {
 		props: {
 			features,
-			lessonMaterials,
+			lessons,
 		}
 	}
 }
