@@ -6,77 +6,77 @@
 				{
 					"title": "HTML",
 					"image": "html.png",
-					"href": ""
+					"href": "https://en.wikipedia.org/wiki/HTML"
 				},
 				{
 					"title": "Javascript",
 					"image": "javascript.png",
-					"href": "",
+					"href": "https://en.wikipedia.org/wiki/JavaScript",
 					"featured": true
 				},
 				{
 					"title": "CSS",
 					"image": "css.png",
-					"href": "",
+					"href": "https://en.wikipedia.org/wiki/CSS",
 					"featured": true
 				},
 				{
 					"title": "NodeJS",
 					"image": "nodejs.svg",
-					"href": ""
+					"href": "https://nodejs.org/en/"
 				},
 				{
 					"title": "ReactJS",
 					"image": "reactjs.png",
-					"href": "",
+					"href": "https://reactjs.org/",
 					"featured": true
 				},
 				{
 					"title": "Vercel",
 					"image": "vercel.svg",
-					"href": "",
+					"href": "https://vercel.com/",
 					"featured": true
 				},
 				{
 					"title": "NextJS",
 					"image": "nextjs.png",
-					"href": "",
+					"href": "https://nextjs.org/",
 					"featured": true
 				},
 				{
 					"title": "Auth0",
 					"image": "auth0.svg",
-					"href": "",
+					"href": "https://auth0.com/",
 					"featured": true
 				},
 				{
 					"title": "PostgreSQL",
 					"image": "postgres.png",
-					"href": "",
+					"href": "https://www.postgresql.org/",
 					"featured": true
 				},
 				{
 					"title": "Stripe",
 					"image": "stripe.svg",
-					"href": "",
+					"href": "https://stripe.com/",
 					"featured": true
 				},
 				{
 					"title": "Google Adsense",
 					"image": "adsense.png",
-					"href": "",
+					"href": "https://www.google.com/adsense/start/",
 					"featured": true
 				},
 				{
 					"title": "Easypost",
 					"image": "easypost.svg",
-					"href": "",
+					"href": "https://www.easypost.com/",
 					"featured": true
 				},
 				{
 					"title": "Google Analytics",
 					"image": "googleAnalytics.svg",
-					"href": "",
+					"href": "https://analytics.google.com/",
 					"featured": true
 				}
 			]
@@ -87,53 +87,53 @@
 				{
 					"title": "React Native",
 					"image": "reactjs.png",
-					"href": "",
+					"href": "https://reactnative.dev/",
 					"featured": true
 				},
 				{
 					"title": "Expo",
 					"image": "expo.svg",
-					"href": "",
+					"href": "https://expo.dev/",
 					"featured": true
 				},
 				{
 					"title": "Auth0",
 					"image": "auth0.svg",
-					"href": "",
+					"href": "auth0.com",
 					"featured": true
 				},
 				{
 					"title": "Publishing to the App Store",
 					"image": "appStore.png",
-					"href": ""
+					"href": "https://developer.apple.com/programs/"
 				},
 				{
 					"title": "Publishing to the Play Store",
 					"image": "googlePlay.png",
-					"href": ""
+					"href": "https://play.google.com/"
 				},
 				{
 					"title": "Stripe",
 					"image": "stripe.svg",
-					"href": "",
+					"href": "stripe.com",
 					"featured": true
 				},
 				{
 					"title": "Easypost",
 					"image": "easypost.svg",
-					"href": "",
+					"href": "https://www.easypost.com/",
 					"featured": true
 				},
 				{
 					"title": "PostgreSQL",
 					"image": "postgres.png",
-					"href": "",
+					"href": "https://www.postgresql.org/",
 					"featured": true
 				},
 				{
 					"title": "Google Admob",
 					"image": "admob.png",
-					"href": "",
+					"href": "https://admob.google.com/",
 					"featured": true
 				}
 			]
