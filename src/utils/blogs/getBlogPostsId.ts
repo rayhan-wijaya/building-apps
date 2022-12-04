@@ -9,7 +9,7 @@ const getBlogPostsId = async ({ forGetStaticPaths }: Params) => {
 	const blogsDir = path.join(process.cwd(), 'data', 'blogs');
 	const postNames = await fs.readdir(blogsDir);
 
-	const postIds = postNames.map(postName => postName.replace('/\.md$/', ''));
+	const postIds = postNames.map(postName => postName.replace(/\.md$/, ''));
 
 	if (forGetStaticPaths) {
 		return postIds.map(postId => ({
