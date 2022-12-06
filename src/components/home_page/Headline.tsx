@@ -15,8 +15,8 @@ const Headline = () => {
 						<span className="text-ice-blue-100 font-bold">For Free!</span>
 					</h1>
 
-					<p className="text-white mb-5">
-						Teaching you mobile and web development. <br />
+					<p className="text-white mb-5 max-w-md">
+						Teaching you mobile and web development.
 						At the end, you can build your own online shop!
 					</p>
 
