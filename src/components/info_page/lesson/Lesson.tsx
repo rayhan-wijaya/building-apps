@@ -11,7 +11,7 @@ const Lesson = ({ lesson }: Props) => {
 			<a className="grayscale opacity-70 hover:filter-none hover:opacity-100 hover:scale-105 hover:z-20 bg-white rounded-md hover:shadow-lg hover:shadow-gray-200 hover:border-gray-500 border-2 border-gray-200 transition-all p-7 flex flex-col justify-center gap-7 items-center">
 				<div className="h-44 w-full relative">
 					<Image
-						src={`/lessonMaterials/${lesson.image}`}
+						src={`/lessons/${lesson.image}`}
 						alt={`An icon of ${lesson.title}`}
 						fill={true}
 						objectFit="scale-down"
