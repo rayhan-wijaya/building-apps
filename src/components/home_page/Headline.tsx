@@ -31,13 +31,13 @@ const Headline = () => {
 				</div>
 
 				<div className="flex gap-5 items-center overflow-hidden relative">
-					<CodeWidget className="absolute w-full animate-codewidget" />
+					<CodeWidget className="absolute w-full motion-safe:animate-codewidget" />
 
-					<div className="opacity-0 animate-phone">
+					<div className="opacity-0 motion-safe:animate-phone">
 						<Image src="/graphics/phone.svg" alt="An image of a product page on a phone." width={200} height={100} />
 					</div>
 					
-					<div className="opacity-0 animate-laptop">
+					<div className="opacity-0 motion-safe:animate-laptop">
 						<Image src="/graphics/laptop.svg" alt="An image of a product page on a laptop." width={500} height={500} />
 					</div>
 				</div>
