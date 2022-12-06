@@ -14,7 +14,7 @@ const Lesson = ({ lesson }: Props) => {
 						src={`/lessons/${lesson.image}`}
 						alt={`An icon of ${lesson.title}`}
 						fill={true}
-						objectFit="scale-down"
+						className="object-contain"
 					/>
 				</div>
 
