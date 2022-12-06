@@ -4,7 +4,7 @@ interface Props {
 	lessonChapters: LessonChapter[];
 }
 
-const LessonModules = ({ lessonChapters }: Props) => {
+const LessonChapters = ({ lessonChapters }: Props) => {
 	return (
 		<div className="flex flex-col gap-32 justify-center items-center p-12">
 			{lessonChapters.map(lessonChapter => {
@@ -16,4 +16,4 @@ const LessonModules = ({ lessonChapters }: Props) => {
 	);
 }
 
-export default LessonModules;
+export default LessonChapters;
