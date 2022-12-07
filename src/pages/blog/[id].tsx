@@ -1,4 +1,4 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
+import type { NextPage, GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
 
 import getBlogPost from 'utils/blogs/getBlogPost';
