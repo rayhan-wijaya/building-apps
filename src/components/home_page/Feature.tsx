@@ -9,7 +9,7 @@ interface Props {
 
 const Feature = ({ feature, className }: Props) => {
 	return (
-		<div className={`bg-white rounded-lg p-12 shadow-lg flex flex-col gap-4 ${className}`}>
+		<div className={`bg-white rounded-lg p-8 shadow-lg flex flex-col gap-4 ${className}`}>
 			<div className={`flex justify-center object-contain`}>
 				<Image
 					src={`/features/${feature.image}` ?? ''}
