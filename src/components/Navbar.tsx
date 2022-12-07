@@ -3,15 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const NavLinks = () => {
-	return (
-		<>
-			<Link href="/info" className="text-lg">More Info</Link>
-			<Link href="/blog" className="text-lg">Blog</Link>
-			<Link href="/faq" className="text-lg">FAQ</Link>
-		</>
-	);
-}
+import NavLinks from 'components/NavLinks';
 
 const Navbar = () => {
 	const [areNavLinksOpen, setAreNavLinksOpen] = useState<boolean>();
