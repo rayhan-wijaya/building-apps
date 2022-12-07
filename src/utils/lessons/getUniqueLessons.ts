@@ -6,7 +6,7 @@ interface Params {
 }
 
 const getUniqueLessons = async ({ onlyFeatured }: Params) => {
-	const lessons: LessonMaterial[] = [];
+	const lessons: Lesson[] = [];
 	const takenLessons = new Set<string>();
 
 	const dir = path.join(process.cwd(), 'data');
