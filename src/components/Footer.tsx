@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import NavLinks from 'components/NavLinks';
 import RegisterCard from 'components/RegisterCard';
 import Copyright from 'components/Copyright';
 
@@ -43,9 +44,7 @@ const FooterInfo = () => {
 
 			<div className="flex flex-col sm:flex-row gap-9">
 				<div className="flex flex-col text-center sm:text-left text-gray-400 text-xl">
-					<Link href="/">More Info</Link>
-					<Link href="/">Blog</Link>
-					<Link href="/">FAQ</Link>
+					<NavLinks />
 				</div>
 
 				<div className="flex flex-col text-center sm:text-left text-gray-400 text-xl">
