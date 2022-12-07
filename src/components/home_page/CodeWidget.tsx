@@ -30,8 +30,8 @@ interface Props {
 
 const CodeWidget = ({ className }: Props) => {
 	return (
-		<div className={`flex flex-col bg-slate-800 shadow-xl rounded-xl py-3 pl-14 pr-36 shadow-[inset_0px_1px_1px] shadow-slate-400 border-2 border-slate-900 ${className}`}>
-			<ol className="text-gray-500 font-mono list-decimal text-xl">
+		<div className={`flex flex-col bg-slate-800 rounded-xl py-3 pl-14 pr-36 shadow-[inset_0px_1px_1px] shadow-slate-400 border-2 border-slate-900 ${className}`}>
+			<ol className="text-gray-500 font-mono list-decimal text-xl w-fit">
 				<li> <Component name="ProductName" hasAnimation={true} /> </li>
 				<li> <Component name="ProductImage" hasAnimation={true} /> </li>
 
