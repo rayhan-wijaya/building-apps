@@ -51,8 +51,8 @@ module.exports = {
 				},
 			},
 			animation: {
-				typing: 'slide-size 2.5s linear 0.5s forwards',
 				codewidget: 'appear-from-below 0.75s ease forwards, 1s disappear-to-top ease 2.5s forwards',
+				typing: 'slide-size 1.3s linear 0.5s forwards',
 				phone: 'appear-from-below 0.97s ease 2.7s forwards',
 				laptop: 'appear-from-below 1s ease 2.75s forwards',
 			},
