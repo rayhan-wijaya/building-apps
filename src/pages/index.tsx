@@ -48,7 +48,7 @@ const Home: NextPage<Props> = ({ features, lessons }) => {
 	);
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
 	const features = await getFeatures();
 	const lessons = await getUniqueLessons({ onlyFeatured: true });
 
