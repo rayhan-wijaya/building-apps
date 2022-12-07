@@ -9,7 +9,10 @@ const LessonChapters = ({ lessonChapters }: Props) => {
 		<div className="flex flex-col gap-32 justify-center items-center p-12">
 			{lessonChapters.map(lessonChapter => {
 				return (
-					<LessonChapter lessonChapter={lessonChapter} />
+					<LessonChapter
+						lessonChapter={lessonChapter}
+						key={lessonChapter.title}
+					/>
 				);
 			})}
 		</div>
