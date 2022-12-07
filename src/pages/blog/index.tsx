@@ -30,7 +30,7 @@ const Blogs: NextPage<Props> = ({ blogPosts }) => {
 	);
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
 	const blogPosts = await getBlogPosts({ sortBy: 'date' });
 
 	return {
