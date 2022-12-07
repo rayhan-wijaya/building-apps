@@ -1,6 +1,4 @@
-import { NextPage } from "next";
-
-import { GetStaticProps } from 'next';
+import type { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
 
 import getFeatures from 'utils/features/getFeatures';
