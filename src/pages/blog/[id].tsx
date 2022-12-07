@@ -21,7 +21,7 @@ const BlogPost: NextPage<Props> = ({ blogPost }) => {
 			<main>
 				<div className="py-56 px-14 flex flex-col items-center gap-3">
 					<h1 className="text-2xl text-align">Blog Post Not Found!</h1>
-					<p className="text-lg text-align">Sorry, we can't seem to find that blog post. Either it's invalid or it has been deleted.</p>
+					<p className="text-lg text-align">Sorry, we can&apos;t seem to find that blog post. Either it&apos;s invalid or it has been deleted.</p>
 				</div>
 			</main>
 		</>;
