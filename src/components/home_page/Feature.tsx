@@ -24,7 +24,7 @@ const Feature = ({ feature, className }: Props) => {
 					{feature.title}
 				</h2>
 
-				<p className="text-center leading-5">{feature.description}</p>
+				<p className="text-center">{feature.description}</p>
 			</div>
 		</div>
 	);
