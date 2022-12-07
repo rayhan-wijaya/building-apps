@@ -1,4 +1,4 @@
-import { NextPage, GetStaticProps } from 'next';
+import type { NextPage, GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import getLessonChapters from 'utils/lessons/getLessonChapters';
