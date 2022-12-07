@@ -22,9 +22,9 @@ model RegisterResponse {
 	nickname    String @db.Text
 	gender      Gender?
 	birthDate   DateTime?
-	phoneNumber String
 	education   String? @db.Text
 	job         String? @db.Text
+	phoneNumber String @db.VarChar(100)
 	email       String @db.VarChar(320)
 	address     String? @db.Text
 }
