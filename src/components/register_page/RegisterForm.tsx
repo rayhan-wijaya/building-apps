@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { trpc } from 'utils/trpc'; 
 
-import { RegisterResponse } from 'schemas/registerResponse';
+import type { RegisterResponse } from 'schemas/registerResponse';
 
 import TextQuestion from 'components/question/TextQuestion';
 import RadioQuestion from 'components/question/RadioQuestion';
