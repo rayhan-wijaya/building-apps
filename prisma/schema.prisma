@@ -17,14 +17,14 @@ enum Gender {
 }
 
 model RegisterResponse {
-	id          String @id @db.Uuid @default(uuid())
-	fullName    String
-	nickname    String
+	id          String @id @default(uuid())
+	fullName    String @db.Text
+	nickname    String @db.Text
 	gender      Gender?
 	birthDate   DateTime?
-	education   String?
-	job         String?
 	phoneNumber String
+	education   String? @db.Text
+	job         String? @db.Text
 	email       String @db.VarChar(320)
-	address     String?
+	address     String? @db.Text
 }
