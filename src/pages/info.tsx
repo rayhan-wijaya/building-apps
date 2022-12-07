@@ -38,7 +38,7 @@ const MoreInfo: NextPage<Props> = ({ lessonChapters }) => {
 	);
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
 	const lessonChapters = await getLessonChapters();
 
 	return {
