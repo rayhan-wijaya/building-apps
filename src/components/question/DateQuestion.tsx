@@ -1,6 +1,7 @@
 import React from 'react';
 
-import DatePicker, { ReactDatePickerProps } from 'react-datepicker';
+import DatePicker from 'react-datepicker';
+import type { ReactDatePickerProps } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 import QuestionLabel from 'components/question/QuestionLabel';
