@@ -10,13 +10,15 @@ const Instructor = () => {
 				<p className="text-xl">I will be your instructor during this program.</p>
 			</div>
 
-			<Image
-				src="/instructor/rayhanwijaya.jpg"
-				alt="An image of Rayhan Wijaya."
-				width={250}
-				height={250}
-				className="rounded-full object-none w-72 h-72 object-[50%_65%]"
-			/>
+			<div className="rounded-full overflow-hidden">
+		    	<Image
+		    		src="/instructor/rayhanwijaya.jpg"
+		    		alt="An image of Rayhan Wijaya."
+		    		width={250}
+		    		height={250}
+		    		className="object-none w-72 h-72 object-[50%_65%]"
+		    	/>
+			</div>
 		</div>
 	);
 }
