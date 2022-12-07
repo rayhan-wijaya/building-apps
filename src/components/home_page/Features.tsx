@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { GetStaticProps } from 'next';
-
 import Feature from 'components/home_page/Feature';
 
 interface Props {
