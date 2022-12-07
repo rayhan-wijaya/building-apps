@@ -18,7 +18,7 @@ const RadioQuestion = ({ question, options, onChange, ...rest }: RadioQuestionPr
 			<div onChange={onChange} className="flex flex-col">
 				{options.map(option => {
 					return (
-						<label>
+						<label key={option.value}>
 							<input type="radio" value={option.value} {...rest} />
 							{' '}
 							<span>{option.text}</span>
