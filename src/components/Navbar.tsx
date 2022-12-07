@@ -25,7 +25,7 @@ const Navbar = () => {
 						/>
 					</button>
 		
-					<Link href="/" className="text-xl font-semibold">Building Apps</Link>
+					<Link href="/" className="text-lg font-semibold">Building Apps</Link>
 		
 					<div className="hidden sm:flex sm:flex-row justify-center items-center gap-7">
 						<NavLinks />
