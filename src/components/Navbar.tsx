@@ -32,12 +32,14 @@ const Navbar = () => {
 					</div>
 				</div>
 	
-				<div className="flex justify-center items-center gap-7">
+				<div className="hidden xs:flex justify-center items-center gap-7">
 					<Link href="/register" className="button-primary bg-ice-blue-300 hover:bg-ice-blue-400 text-white transition-all cursor-pointer">Register</Link>
 				</div>
 			</div>
 
 			<div className={`sm:hidden items-center text-lg ${areNavLinksOpen ? 'flex flex-col' : 'hidden'}`}>
+				<Link href="/register" className="block xs:hidden button-primary rounded-lg text-white bg-ice-blue-300 w-[50%] text-center mb-3">Register</Link>
+
 				<NavLinks />
 			</div>
 		</div>
