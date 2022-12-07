@@ -56,6 +56,9 @@ module.exports = {
 				phone: 'appear-from-below 0.97s ease 2.7s forwards',
 				laptop: 'appear-from-below 1s ease 2.75s forwards',
 			},
+			screens: {
+				'xs': '480px',
+			},
 		},
 	},
 	plugins: [
