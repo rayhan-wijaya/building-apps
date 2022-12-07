@@ -4,7 +4,7 @@ interface LessonsData {
 
 interface LessonChapter {
 	title: string;
-	lessons: LessonMaterial[];
+	lessons: Lesson[];
 }
 
 interface Lesson {
