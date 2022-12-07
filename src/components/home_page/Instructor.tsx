@@ -16,7 +16,7 @@ const Instructor = () => {
 		    		alt="An image of Rayhan Wijaya."
 		    		width={250}
 		    		height={250}
-		    		className="object-none w-72 h-72 object-[50%_65%]"
+		    		className="object-none w-fit h-fit object-[50%_65%]"
 		    	/>
 			</div>
 		</div>
