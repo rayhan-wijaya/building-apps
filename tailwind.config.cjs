@@ -46,7 +46,7 @@ module.exports = {
 						width: '0',
 					},
 					'100%': {
-						width: '100%',
+						width: '130%',
 					},
 				},
 			},
