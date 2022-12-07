@@ -1,4 +1,4 @@
-import { AppType } from "next/app";
+import type { AppType } from "next/app";
 
 import { trpc } from "../utils/trpc";
 
