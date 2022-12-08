@@ -125,9 +125,9 @@
 					"featured": true
 				},
 				{
-					"title": "PostgreSQL",
-					"image": "postgres.png",
-					"href": "https://www.postgresql.org/",
+					"title": "PlanetScale",
+					"image": "planetscale.png",
+					"href": "https://planetscale.com/",
 					"featured": true
 				},
 				{
