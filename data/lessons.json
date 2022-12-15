@@ -5,58 +5,68 @@
 			"lessons": [
 				{
 					"title": "HTML",
+					"purpose": "for Structuring a Page",
 					"image": "html.png",
 					"href": "https://en.wikipedia.org/wiki/HTML"
 				},
 				{
 					"title": "Javascript",
+					"purpose": "for Functionality",
 					"image": "javascript.png",
 					"href": "https://en.wikipedia.org/wiki/JavaScript",
 					"featured": true
 				},
 				{
 					"title": "CSS",
+					"purpose": "for Styling",
 					"image": "css.png",
 					"href": "https://en.wikipedia.org/wiki/CSS",
 					"featured": true
 				},
 				{
 					"title": "NodeJS",
+					"purpose": "for Server-side JS",
 					"image": "nodejs.svg",
 					"href": "https://nodejs.org/en/"
 				},
 				{
 					"title": "ReactJS",
+					"purpose": "for UI Components",
 					"image": "reactjs.png",
 					"href": "https://reactjs.org/",
 					"featured": true
 				},
 				{
 					"title": "Vercel",
+					"purpose": "for Hosting",
 					"image": "vercel.svg",
 					"href": "https://vercel.com/",
 					"featured": true
 				},
 				{
 					"title": "NextJS",
+					"purpose": "for Full-fledged Web Apps",
 					"image": "nextjs.png",
 					"href": "https://nextjs.org/",
 					"featured": true
 				},
 				{
 					"title": "Auth0",
+					"purpose": "for Authentication",
 					"image": "auth0.svg",
 					"href": "https://auth0.com/",
 					"featured": true
 				},
 				{
 					"title": "PlanetScale",
+					"purpose": "as a Database",
 					"image": "planetscale.png",
 					"href": "https://planetscale.com/",
 					"featured": true
 				},
 				{
 					"title": "Stripe",
+					"purpose": "for Payment",
 					"image": "stripe.svg",
 					"href": "https://stripe.com/",
 					"featured": true
@@ -69,6 +79,7 @@
 				},
 				{
 					"title": "Easypost",
+					"purpose": "for Shipping",
 					"image": "easypost.svg",
 					"href": "https://www.easypost.com/",
 					"featured": true
@@ -86,18 +97,21 @@
 			"lessons": [
 				{
 					"title": "React Native",
+					"purpose": "for Mobile Apps",
 					"image": "reactjs.png",
 					"href": "https://reactnative.dev/",
 					"featured": true
 				},
 				{
 					"title": "Expo",
+					"purpose": "a Mobile App Platform",
 					"image": "expo.svg",
 					"href": "https://expo.dev/",
 					"featured": true
 				},
 				{
 					"title": "Auth0",
+					"purpose": "for Authentication",
 					"image": "auth0.svg",
 					"href": "auth0.com",
 					"featured": true
@@ -114,6 +128,7 @@
 				},
 				{
 					"title": "Stripe",
+					"purpose": "for Payment",
 					"image": "stripe.svg",
 					"href": "stripe.com",
 					"featured": true
@@ -132,6 +147,7 @@
 				},
 				{
 					"title": "Google Admob",
+					"purpose": "for Mobile Advertisements",
 					"image": "admob.png",
 					"href": "https://admob.google.com/",
 					"featured": true
