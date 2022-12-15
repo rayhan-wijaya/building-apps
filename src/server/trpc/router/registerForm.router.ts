@@ -3,7 +3,6 @@ import registerResponse from 'schemas/registerResponse';
 
 import { router, publicProcedure } from 'server/trpc/trpc';
 
-import { prisma } from 'server/db/client';
 
 export const registerFormRouter = router({
 	respond: publicProcedure
@@ -12,8 +11,8 @@ export const registerFormRouter = router({
 				answers: registerResponse,
 			})
 		)
-		.mutation(async ({ input }) => {
-			await prisma.registerResponse.create({
+		.mutation(async ({ input, ctx }) => {
+			await ctx.prisma.registerResponse.create({
 				data: input.answers,
 			});
 		}),
