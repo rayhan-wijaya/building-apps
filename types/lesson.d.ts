@@ -9,6 +9,7 @@ interface LessonChapter {
 
 interface Lesson {
 	title: string;
+	purpose: string;
 	image: string;
 	href: string;
 	featured?: boolean;
