@@ -5,7 +5,7 @@ interface Params {
 	onlyFeatured: boolean;
 }
 
-const getUniqueLessons = async ({ onlyFeatured }: Params) => {
+const getUniqueLessons = async ({ onlyFeatured }: Params = { onlyFeatured: false }) => {
 	const lessons: Lesson[] = [];
 	const takenLessons = new Set<string>();
 
