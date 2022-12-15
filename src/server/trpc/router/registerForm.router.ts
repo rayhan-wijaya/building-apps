@@ -20,6 +20,10 @@ export const registerFormRouter = router({
 			})
 		)
 		.mutation(async ({ input, ctx }) => {
+			if (!canRespond(ctx.prisma)) {
+				return;
+			}
+
 			await ctx.prisma.registerResponse.create({
 				data: input.answers,
 			});
