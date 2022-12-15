@@ -37,6 +37,11 @@
 					"featured": true
 				},
 				{
+					"title": "Third-Party Components",
+					"image": "",
+					"href": "http://react-responsive-carousel.js.org/"
+				},
+				{
 					"title": "Vercel",
 					"purpose": "for Hosting",
 					"image": "vercel.svg",
@@ -51,10 +56,35 @@
 					"featured": true
 				},
 				{
+					"title": "Google Adsense",
+					"purpose": "for Advertisements",
+					"image": "adsense.png",
+					"href": "https://www.google.com/adsense/start",
+					"featured": true
+				}
+			]
+		},
+		{
+			"title": "Building an API",
+			"lessons": [
+				{
+					"title": "NextJS",
+					"purpose": "for an API",
+					"image": "nextjs.png",
+					"href": "https://nextjs.org/"
+				},
+				{
 					"title": "Auth0",
 					"purpose": "for Authentication",
 					"image": "auth0.svg",
 					"href": "https://auth0.com/",
+					"featured": true
+				},
+				{
+					"title": "Sanity",
+					"purpose": "as a CMS",
+					"image": "sanity.webp",
+					"href": "https://www.sanity.io/",
 					"featured": true
 				},
 				{
@@ -72,16 +102,10 @@
 					"featured": true
 				},
 				{
-					"title": "Google Adsense",
-					"image": "adsense.png",
-					"href": "https://www.google.com/adsense/start/",
-					"featured": true
-				},
-				{
 					"title": "Easypost",
 					"purpose": "for Shipping",
 					"image": "easypost.svg",
-					"href": "https://www.easypost.com/",
+					"href": "https://easypost.com",
 					"featured": true
 				},
 				{
@@ -131,18 +155,6 @@
 					"purpose": "for Payment",
 					"image": "stripe.svg",
 					"href": "stripe.com",
-					"featured": true
-				},
-				{
-					"title": "Easypost",
-					"image": "easypost.svg",
-					"href": "https://www.easypost.com/",
-					"featured": true
-				},
-				{
-					"title": "PlanetScale",
-					"image": "planetscale.png",
-					"href": "https://planetscale.com/",
 					"featured": true
 				},
 				{
