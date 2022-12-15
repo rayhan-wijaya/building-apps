@@ -2,18 +2,21 @@ import Lesson from 'components/info_page/lesson/Lesson';
 
 interface Props {
 	lessonChapter: LessonChapter;
+	lessonChapterIndex: number;
 }
 
-const LessonChapter = ({ lessonChapter }: Props) => {
+const LessonChapter = ({ lessonChapter, lessonChapterIndex }: Props) => {
 	return (
 		<div>
-			<h2 className="text-2xl font-semibold text-center mb-7">{lessonChapter.title}</h2>
+			<h2 className="text-2xl font-semibold text-center mb-7">{lessonChapterIndex}. {lessonChapter.title}</h2>
 
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-				{lessonChapter.lessons.map(lesson => {
+			<div className="flex flex-col w-fit">
+				{lessonChapter.lessons.map((lesson, lessonIndex) => {
 					return (
 						<Lesson
 							lesson={lesson}
+							lessonChapterIndex={lessonChapterIndex}
+							lessonIndex={lessonIndex + 1}
 							key={lesson.title}
 						/>
 					);
