@@ -1,26 +1,26 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 interface Props {
 	lesson: Lesson;
+	lessonChapterIndex: number;
+	lessonIndex: number;
 }
 
-const Lesson = ({ lesson }: Props) => {
+const Lesson = ({ lesson, lessonChapterIndex, lessonIndex }: Props) => {
 	return (
-		<Link href={lesson.href} legacyBehavior={true}>
-			<a className="grayscale opacity-70 hover:filter-none hover:opacity-100 hover:scale-105 hover:z-20 bg-white rounded-md hover:shadow-lg hover:shadow-gray-200 hover:border-gray-500 border-2 border-gray-200 transition-all p-7 flex flex-col justify-center gap-7 items-center w-64">
-				<div className="h-44 w-full relative">
-					<Image
-						src={`/lessons/${lesson.image}`}
-						alt={`An icon of ${lesson.title}`}
-						fill={true}
-						className="object-contain"
-					/>
-				</div>
+		<div className="w-fit flex flex-col sm:flex-row gap-0 sm:gap-3 mb-7 sm:mb-0">
+			<span className="text-2xl w-fit whitespace-nowrap font-semibold sm:font-normal">Lesson {lessonChapterIndex}.{lessonIndex}:</span>
 
-				<h3 className="text-2xl text-center">{lesson.title}</h3>
-			</a>
-		</Link>
+		    <h3 className="text-2xl">
+				<Link href={lesson.href} className="font-semibold underline text-ice-blue-200">
+					{lesson.title}
+				</Link>
+
+				{' '}
+
+				{lesson.purpose}
+		    </h3>
+		</div>
 	);
 }
 
