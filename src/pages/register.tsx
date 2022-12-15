@@ -5,10 +5,55 @@ import Head from 'next/head';
 import RegisterForm from 'components/register_page/RegisterForm';
 import FormHeadline from 'components/register_page/FormHeadline';
 import Success from 'components/register_page/Success';
+import Failure from 'components/register_page/Failure';
 
 import Footer from 'components/Footer';
 
+import { trpc } from 'utils/trpc';
+
+interface RegisterContentProps {
+	canRespond: boolean | undefined;
+	hasRegistered: boolean;
+	setHasRegistered: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const RegisterContent: React.FC<RegisterContentProps> = ({ canRespond, hasRegistered, setHasRegistered }) => {
+	if (canRespond === undefined) {
+		return (
+	    	<div>
+				Checking...
+	    	</div>
+		);
+	}
+
+	if (!canRespond) {
+		return (
+			<Failure.ResponseLimit />
+		);
+	}
+
+	return (
+		<>
+		    {
+		        hasRegistered
+		        ? <Success />
+				: <div className="mb-28">
+					<FormHeadline />
+					<RegisterForm setHasRegistered={setHasRegistered} />
+				</div>
+		    }
+		</>
+	);
+}
+
 const Register = () => {
+	const [hasFetchedCanRespond, setHasFetchedCanRespond] = useState(false);
+
+	const { data: canRespond } = trpc.registerForm.canRespond.useQuery(undefined, {
+		onSuccess: () => setHasFetchedCanRespond(true),
+		enabled: !hasFetchedCanRespond,
+	});
+
 	const [hasRegistered, setHasRegistered] = useState(false);
 
 	return (
@@ -16,17 +61,13 @@ const Register = () => {
 			<Head>
 				<title>Register • Building Apps</title>
 			</Head>
-
+			
 			<main>
-
-				{
-					hasRegistered
-					? <Success />
-					: <div className="mb-28">
-						<FormHeadline />
-						<RegisterForm setHasRegistered={setHasRegistered} />
-					</div>
-				}
+				<RegisterContent
+					canRespond={canRespond}
+					hasRegistered={hasRegistered}
+					setHasRegistered={setHasRegistered}
+				/>
 
 				<Footer includeRegisterCard={false} />
 			</main>
