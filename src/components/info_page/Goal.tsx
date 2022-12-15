@@ -1,6 +1,6 @@
 const Goal = () => {
 	return (
-		<div className="py-24 flex flex-col justify-center items-center">
+		<div className="py-12 flex flex-col justify-center items-center">
 			<div className="text-xl max-w-3xl flex flex-col gap-5 px-14">
 				<p>This program aims to provide free education and training on building web and mobile apps.</p>
 				<p>
