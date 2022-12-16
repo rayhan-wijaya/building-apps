@@ -6,10 +6,15 @@ import { router, publicProcedure } from 'server/trpc/trpc';
 import { type PrismaClient } from '@prisma/client';
 
 const canRespond = async (prismaClient: PrismaClient) => {
-	const responsesCount = await prismaClient.registerResponse.count();
+	const activeResponsesCount = await prismaClient.registerResponse.count({
+		where: {
+			isActive: true,
+		},
+	});
+
 	const maxResponses = 10;
 
-	return responsesCount < maxResponses;
+	return activeResponsesCount < maxResponses;
 }
 
 export const registerFormRouter = router({
@@ -25,7 +30,10 @@ export const registerFormRouter = router({
 			}
 
 			await ctx.prisma.registerResponse.create({
-				data: input.answers,
+				data: {
+					...input.answers,
+					isActive: true,
+				}
 			});
 		}),
 	canRespond: publicProcedure
