@@ -16,7 +16,7 @@ const Headline = () => {
 					</h1>
 
 					<p className="text-white max-w-md mb-5 text-xl xs:text-center lg:text-left">
-						Teaching you mobile and web development.
+						Teaching you mobile and web development for up to 2 or 3 months.
 						At the end, you can build your own online shop!
 					</p>
 
