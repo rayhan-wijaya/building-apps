@@ -1,7 +1,7 @@
 ---
 title: 'Releasing The Program!'
 description: 'Bringing out free education of building mobile and web applications into the world.'
-date: '12-4-2022'
+date: '2022-12-03T17:00:00.000Z'
 author: 'Rayhan Wijaya'
 ---
 
