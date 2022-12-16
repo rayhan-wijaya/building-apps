@@ -1,4 +1,4 @@
-import BlogPost from 'components/blog_page/blogPost/BlogPost';
+import BlogPost from 'components/blog_page/blogPost/BlogPostLink';
 
 interface Props {
 	blogPosts: BlogPost[];
