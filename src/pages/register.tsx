@@ -27,7 +27,7 @@ const RegisterContent: React.FC<RegisterContentProps> = ({ canRespond, hasRegist
 			window.scrollTo(0, 0);
 			setHasScrolled(true);
 		}
-	}, []);
+	}, [hasRegistered]);
 
 	if (canRespond === undefined) {
 		return (
