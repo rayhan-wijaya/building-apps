@@ -20,9 +20,12 @@ interface RegisterContentProps {
 }
 
 const RegisterContent: React.FC<RegisterContentProps> = ({ canRespond, hasRegistered, setHasRegistered }) => {
+	const [hasScrolled, setHasScrolled] = useState(false);
+
 	useEffect(() => {
-		if (hasRegistered) {
+		if (hasRegistered && !hasScrolled) {
 			window.scrollTo(0, 0);
+			setHasScrolled(true);
 		}
 	}, []);
 
