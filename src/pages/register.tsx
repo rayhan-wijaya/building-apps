@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Head from 'next/head';
 
@@ -20,6 +20,16 @@ interface RegisterContentProps {
 }
 
 const RegisterContent: React.FC<RegisterContentProps> = ({ canRespond, hasRegistered, setHasRegistered }) => {
+	const [hasScrolled, setHasScrolled] = useState(false);
+
+	useEffect(() => {
+		if (hasRegistered && !hasScrolled) {
+			window.scrollTo(0, 0);
+			setHasScrolled(true);
+		}
+	}, [hasRegistered]);
+
+
 	if (canRespond === undefined) {
 		return (
 	    	<Loading.CheckingResponses />
