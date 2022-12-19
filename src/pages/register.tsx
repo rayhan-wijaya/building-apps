@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 import Head from 'next/head';
@@ -6,6 +7,7 @@ import RegisterForm from 'components/register_page/RegisterForm';
 import FormHeadline from 'components/register_page/FormHeadline';
 import Success from 'components/register_page/Success';
 import Failure from 'components/register_page/Failure';
+import Loading from 'components/register_page/Loading';
 
 import Footer from 'components/Footer';
 
@@ -20,9 +22,7 @@ interface RegisterContentProps {
 const RegisterContent: React.FC<RegisterContentProps> = ({ canRespond, hasRegistered, setHasRegistered }) => {
 	if (canRespond === undefined) {
 		return (
-	    	<div>
-				Checking...
-	    	</div>
+	    	<Loading.CheckingResponses />
 		);
 	}
 
