@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import NavLinks from 'components/NavLinks';
 import RegisterCard from 'components/RegisterCard';
@@ -46,12 +47,16 @@ const FooterInfo = () => {
 					<NavLinks />
 				</div>
 
-				<div className="flex flex-col text-center sm:text-left text-gray-400 text-xl">
+				<div className="flex flex-col text-center sm:text-left text-gray-400 text-lg gap-5">
 					<p>
 						You can contact: {' '}
 						<br />
 						+62 813 2486 2010
 					</p>
+
+					<Link href="https://wa.me/+6281324862010">
+						Chat With Me
+					</Link>
 				</div>
 			</div>
 		</div>
