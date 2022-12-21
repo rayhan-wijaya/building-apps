@@ -56,7 +56,7 @@ const FooterInfo = () => {
 
 					<Link
 						href="https://wa.me/+6281324862010"
-						className="button-primary"
+						className="button-secondary text-center text-black"
 					>
 						Chat With Me
 					</Link>
