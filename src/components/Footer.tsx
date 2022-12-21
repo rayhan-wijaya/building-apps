@@ -47,7 +47,7 @@ const FooterInfo = () => {
 					<NavLinks />
 				</div>
 
-				<div className="flex flex-col text-center sm:text-left text-gray-400 text-xl gap-5">
+				<div className="flex flex-col text-center sm:text-left text-gray-400 text-lg gap-5">
 					<p>
 						You can contact: {' '}
 						<br />
