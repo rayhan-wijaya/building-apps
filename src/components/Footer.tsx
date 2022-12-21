@@ -54,10 +54,7 @@ const FooterInfo = () => {
 						+62 813 2486 2010
 					</p>
 
-					<Link
-						href="https://wa.me/+6281324862010"
-						className="button-secondary text-center text-gray-400 border-gray-400"
-					>
+					<Link href="https://wa.me/+6281324862010">
 						Chat With Me
 					</Link>
 				</div>
