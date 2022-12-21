@@ -46,12 +46,19 @@ const FooterInfo = () => {
 					<NavLinks />
 				</div>
 
-				<div className="flex flex-col text-center sm:text-left text-gray-400 text-xl">
+				<div className="flex flex-col text-center sm:text-left text-gray-400 text-xl gap-5">
 					<p>
 						You can contact: {' '}
 						<br />
 						+62 813 2486 2010
 					</p>
+
+					<Link
+						href="https://wa.me/+6281324862010"
+						className="button-primary"
+					>
+						Chat With Me
+					</Link>
 				</div>
 			</div>
 		</div>
