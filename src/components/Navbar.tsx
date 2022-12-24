@@ -28,7 +28,7 @@ const Navbar = () => {
 					<Link href="/" className="text-lg font-semibold">Building Apps</Link>
 		
 					<div className="hidden sm:flex sm:flex-row justify-center items-center gap-7">
-						<NavLinks />
+						<NavLinks isNavbar={true} />
 					</div>
 				</div>
 	
@@ -40,7 +40,7 @@ const Navbar = () => {
 			<div className={`sm:hidden items-center text-lg ${areNavLinksOpen ? 'flex flex-col' : 'hidden'}`}>
 				<Link href="/register" className="block xs:hidden button-primary rounded-lg text-white bg-ice-blue-300 w-[50%] text-center mb-3">Register</Link>
 
-				<NavLinks />
+				<NavLinks isNavbar={true} />
 			</div>
 		</div>
 	);

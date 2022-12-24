@@ -1,11 +1,22 @@
 import Link from 'next/link';
 
-const NavLinks = () => {
+type Props = {
+  isNavbar: boolean;
+  className: string;
+}
+
+const NavLinks: React.FC<Props> = ({ isNavbar = false, className }) => {
 	return (
 		<>
-		 	<Link href="/" className="text-lg block sm:hidden">Home</Link>
-			<Link href="/info" className="text-lg">More Info</Link>
-			<Link href="/blog" className="text-lg">Blog</Link>
+      {
+        isNavbar
+        ? <Link href="/" className={`text-lg block sm:hidden ${className}`}>Home</Link>
+        : null
+      }
+      
+			<Link href="/info" className={`text-lg ${className}`}>More Info</Link>
+			<Link href="/blog" className={`text-lg ${className}`}>Blog</Link>
+			<Link href="/contact" className={`text-lg ${className}`}>Contact</Link>
 		</>
 	);
 }
