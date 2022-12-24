@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 type Props = {
-  isNavbar: boolean;
-  className: string;
+  isNavbar?: boolean;
+  className?: string;
 }
 
 const NavLinks: React.FC<Props> = ({ isNavbar = false, className }) => {
