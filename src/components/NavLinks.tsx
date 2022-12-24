@@ -16,7 +16,6 @@ const NavLinks: React.FC<Props> = ({ isNavbar = false, className }) => {
       
 			<Link href="/info" className={`text-lg ${className}`}>More Info</Link>
 			<Link href="/blog" className={`text-lg ${className}`}>Blog</Link>
-			<Link href="/contact" className={`text-lg ${className}`}>Contact</Link>
 		</>
 	);
 }
